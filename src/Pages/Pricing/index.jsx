@@ -1,40 +1,40 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Accordion from '../../Components/Accordion'
-
 import Title from '../../Components/Title/index'
 import Toggle from '../../Components/ToggleBtn'
-
+import Header from '../../Components/HeaderSection'
 
 const faqs = [
     {
         title: 'Will employees be on my company’s payroll?',
-        desc: 'Consider these employees your full-time, dedicated resources that work for you on a full-time basis. MSL takes care of medical benefits and other insurance since these employees are primarily associated with us, but they work as your dedicated resources alone under a specified Remote Employee Hiring Cost.'
+        desc: 'Consider these employees your full-time, dedicated resources that work for you on a full-time basis. Intellicore takes care of medical benefits and other insurance since these employees are primarily associated with us, but they work as your dedicated resources alone under a specified Remote Employee Hiring Cost.'
     },
     {
         title: 'How do I make sure I am choosing the right service?',
-        desc: 'Consider these employees your full-time, dedicated resources that work for you on a full-time basis. MSL takes care of medical benefits and other insurance since these employees are primarily associated with us, but they work as your dedicated resources alone under a specified Remote Employee Hiring Cost.'
+        desc: 'Consider these employees your full-time, dedicated resources that work for you on a full-time basis. Intellicore takes care of medical benefits and other insurance since these employees are primarily associated with us, but they work as your dedicated resources alone under a specified Remote Employee Hiring Cost.'
     },
     {
         title: 'Do I need to be tech-savvy to cooperate with us?',
-        desc: 'Consider these employees your full-time, dedicated resources that work for you on a full-time basis. MSL takes care of medical benefits and other insurance since these employees are primarily associated with us, but they work as your dedicated resources alone under a specified Remote Employee Hiring Cost.'
+        desc: 'Consider these employees your full-time, dedicated resources that work for you on a full-time basis. Intellicore takes care of medical benefits and other insurance since these employees are primarily associated with us, but they work as your dedicated resources alone under a specified Remote Employee Hiring Cost.'
     },
     {
         title: 'Can I Downgrde or upgrade my subscription?',
-        desc: 'Consider these employees your full-time, dedicated resources that work for you on a full-time basis. MSL takes care of medical benefits and other insurance since these employees are primarily associated with us, but they work as your dedicated resources alone under a specified Remote Employee Hiring Cost.'
+        desc: 'Consider these employees your full-time, dedicated resources that work for you on a full-time basis. Intellicore takes care of medical benefits and other insurance since these employees are primarily associated with us, but they work as your dedicated resources alone under a specified Remote Employee Hiring Cost.'
     },
     {
         title: 'Still hung up in questions?',
-        desc: 'Consider these employees your full-time, dedicated resources that work for you on a full-time basis. MSL takes care of medical benefits and other insurance since these employees are primarily associated with us, but they work as your dedicated resources alone under a specified Remote Employee Hiring Cost.'
+        desc: 'Consider these employees your full-time, dedicated resources that work for you on a full-time basis. Intellicore takes care of medical benefits and other insurance since these employees are primarily associated with us, but they work as your dedicated resources alone under a specified Remote Employee Hiring Cost.'
     },
 ]
+
 const juniorDev = [
     {
-        title: 'starter',
+        title: '10 hours per week',
         logo: '/Assets/Icons/kite.svg',
-        totalHours: '40',
+        totalHours: '10',
         perWeek: '10',
-        perHour: '20',
+        perHour: '150',
         trial: '5',
         redirectLink: '/contact_us',
         backgroundColor: '#ffffff',
@@ -42,11 +42,11 @@ const juniorDev = [
         linkColor: '#0199FE'
     },
     {
-        title: 'basic',
+        title: '20 hours per week',
         logo: '/Assets/Icons/paper-plane.svg',
-        totalHours: '80',
+        totalHours: '20',
         perWeek: '20',
-        perHour: '25',
+        perHour: '120',
         trial:'10',
         redirectLink: '/contact_us',
         backgroundColor: '#0199FE',
@@ -54,11 +54,11 @@ const juniorDev = [
         linkColor: '#fff'
     },
     {
-        title: 'premium',
+        title: 'Full time(40 hours per week)',
         logo: '/Assets/Icons/startup.svg',
-        totalHours: '160',
+        totalHours: '40',
         perWeek: '40',
-        perHour: '15',
+        perHour: '80',
         trail: '10',
         redirectLink: '/contact_us',
         backgroundColor: '#00146B',
@@ -110,9 +110,6 @@ const Pricing = () => {
     const [priceList, setPriceList] = useState(juniorDev)
     const [enabled, setEnabled] = useState(false)
 
-    
-
-
     useEffect(() => {
         console.log(enabled)
 
@@ -127,24 +124,22 @@ const Pricing = () => {
 
     return (
         <div className="">
-            <div className="relative flex justify-center items-center">
+            <Header name="Pricing" />
+            {/* <div className="relative flex justify-center items-center">
                 <img src="/Assets/Pricing/hero.png" className='w-full min-h-[100px] max-h-96 object-cover object-top' alt="hero" />
                 <h1 className="absolute text-3xl md:text-4xl text-white font-bold tracking-wider capitalize">Pricing</h1>
-            </div>
+            </div> */}
             <div className='max-w-7xl mx-auto px-3'>
                 {/* plan */}
                 <div className="my-5 flex flex-col items-center md:px-16">
 
                     <Title title_text="Choose your plan" />
-
                     {/* toggle button  */}
-                    <div className='flex text-center text-[rgba(0,0,0,0.41)]'>
+                    {/* <div className='flex text-center text-[rgba(0,0,0,0.41)]'>
                         <p className={`mr-5 ${enabled === false ? "text-[#0199FE] " :  "text-[rgba(0,0,0,0.41)]"}`}>Senior Developer</p>
                         <Toggle toggling={enabled} setValue={ setEnabled} />
                         <p className={`ml-5 ${enabled === true ? " text-[#0199FE] " :  "text-[rgba(0,0,0,0.41)]"}}`}>Junior Developer</p>
-                    </div>
-
-
+                    </div> */}
 
                     <div className="px-5 grid grid-cols-1 md:grid-cols-3 gap-3 lg:gap-8 w-full my-10">
                         {priceList && priceList.map((item, index) => (

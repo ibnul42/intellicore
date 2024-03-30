@@ -27,9 +27,9 @@ const budgets = [
 ]
 
 const items = [
-    { id: 1, icon: "/Assets/Icons/smartphone.svg", name: '+8801736666999' },
-    { id: 2, icon: "/Assets/Icons/envelope.svg",  name:'info@mistrisolutions.com' },
-    { id: 3, icon: "/Assets/Icons/home.svg", name:"44/F/7 2nd Floor, Rangan Tower, West Panthapath, Dhaka - 1215"}
+    { id: 1, icon: "/Assets/Icons/smartphone.svg", name: '+15616933947' },
+    { id: 2, icon: "/Assets/Icons/envelope.svg",  name:'contact@intellicore.info' },
+    { id: 3, icon: "/Assets/Icons/home.svg", name:"2113 EVERGLADES LANE #1045, THE VILLAGES, FLORIDA, 32163"}
   ]
 
 const Contact = () => {

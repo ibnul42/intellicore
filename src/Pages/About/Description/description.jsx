@@ -8,39 +8,27 @@ const Description = () => {
 
   const people = [
     {
-      name: 'Razibul Islam',
-      role: 'Chairman',
-      imageUrl: "/Assets/About/leadership/person1.svg",
+      name: 'Caroline Clements',
+      role: 'Founder & CEO',
+      imageUrl: "/Assets/About/caroline.jpg",
     },
     {
-      name: 'Md Shariful Islam',
-      role: 'Managing Director & CEO',
+      name: 'Bradin McClelland',
+      role: 'CTO & Project Manager',
       imageUrl:
-        '/Assets/About/leadership/person2.png',
+        '/Assets/About/bradin.jpg',
     },
     {
-      name: 'Sajal Mustafiz',
-      role: 'Director & CTO',
-      imageUrl:
-        '/Assets/About/leadership/person3.svg',
-    },
-    {
-      name: 'Abu Maruf Md Saifullah',
+      name: 'Ahmad Zamir',
       role: 'Director',
       imageUrl:
-        '/Assets/About/leadership/person4.svg',
+        '/Assets/About/ahmed.jpg',
     },
     {
-      name: 'Md. Azmeer Hossin Talukder',
-      role: 'Director',
+      name: 'Babar Farooqi',
+      role: 'Technical Manager',
       imageUrl:
-        '/Assets/About/leadership/person5.svg',
-    },
-    {
-      name: 'Abdullah Zubair',
-      role: 'Director',
-      imageUrl:
-        '/Assets/About/Ellipse3.png',
+        '/Assets/About/babar.jpg',
     },
 
   ]
@@ -79,7 +67,7 @@ const Description = () => {
           <h6 className="font-bold tracking-widest sm:text-3xl mb-4 text-black ">Who <span className='text-[#0199FE]'>We</span > Are <span className='text-[#0199FE]'>?</span>
           </h6>
           <p className='text-xl text-slate-500 text-justify '>
-            Mistri Solutions Limited (MSL) is a software development company that excels offering innovative approaches and emerging concepts for its clients. We are confident in supplying high-quality software as the foundation for digital transformation. Our highly skilled in-house and international expert provides you with solutions that will give you an edge in the marketplace. Your project for software development to enhance business should be entrusted to Mistri Solutions Limited (MSL).
+            Intellicore is a software development company that excels offering innovative approaches and emerging concepts for its clients. We are confident in supplying high-quality software as the foundation for digital transformation. Our highly skilled in-house and international expert provides you with solutions that will give you an edge in the marketplace. Your project for software development to enhance business should be entrusted to Intellicore.
           </p>
 
         </div>
@@ -100,7 +88,7 @@ const Description = () => {
         <div className="bg-gradient-to-r from-indigo-900 via-indigo-700 to-indigo-900	absolute w-full h-full top-20  md:h-[32rem] -z-10"></div>
         <div className="flex flex-col justify-between items-center 	gap-8	">
 
-          <section class="w-96	">
+          <section class="w-96 px-2">
             <div class="flex  h-full bg-gray-100 p-8 flex-col text-gray-900">
               <div class="flex items-center mb-3">
                 <img className='w-[50px] mr-5	' src="/Assets/About/mission.svg" alt="" />
@@ -108,14 +96,14 @@ const Description = () => {
               </div>
               <div class="flex-grow">
                 <p class="leading-relaxed text-base text-justify">
-                  MSL’s mission is to give the future a new form, one in which on-demand business platforms make it easy to launch a brand-new business. MSL adheres to the philosophy that our customers should be given the opportunity to expand and mature according to their own standards, just as we do with our goods and services.
+                  Intellicore’s mission is to give the future a new form, one in which on-demand business platforms make it easy to launch a brand-new business. Intellicore adheres to the philosophy that our customers should be given the opportunity to expand and mature according to their own standards, just as we do with our goods and services.
                 </p>
               </div>
             </div>
           </section>
 
 
-          <section class="w-96	shadow-lg shadow-black-500/40 ">
+          <section class="w-96 shadow-lg shadow-black-500/40 px-2 ">
             <div class="flex  h-full bg-gray-100 p-8 flex-col">
               <div class="flex items-center mb-3">
                 <img className='w-[50px] mr-5	' src="/Assets/About/star.svg" alt="" />
@@ -123,7 +111,7 @@ const Description = () => {
               </div>
               <div class="flex-grow">
                 <p class="leading-relaxed text-base text-justify	">
-                  MSL's vision is to become a premier performer by satisfying the expectations of our clients through the development of digital platform strategies, quality software solutions, and the creation of generic expansion plans.
+                  Intellicore's vision is to become a premier performer by satisfying the expectations of our clients through the development of digital platform strategies, quality software solutions, and the creation of generic expansion plans.
                 </p>
               </div>
             </div>
@@ -139,47 +127,10 @@ const Description = () => {
         </div>
       </div>
 
-
-
       {/* leadership  */}
       <div className="mx-auto max-w-7xl py-5 px-4 text-center sm:px-6 lg:px-8 lg:py-15 mb-20">
         <div className="space-y-8 sm:space-y-12 mt-16 md:mt-1">
           <Title title_text="Leadership" />
-          {/* <ul
-            role="list"
-            className="mx-auto grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-3 md:gap-x-6 lg:max-w-5xl lg:gap-x-8 lg:gap-y-12 "
-          >
-            {people.map((person) => (
-              <li className='flex justify-center mt-6' key={person.name}>
-                <div className="space-y-4 relative  rounded-full w-64 md:w-96 overflow-hidden  employee">
-                  <img className="mx-auto h-50 w-50 rounded-full " src={person.imageUrl} alt="" />
-
-
-                  <div className="space-y-2 absolute w-full h-full flex justify-center items-center text-white socialMedia">
-                    <div className="font-medium lg:text-sm">
-                      <h3 className='text-lg mb-1'>{person.name}</h3>
-                      <p className="text-white text-xs mb-2">{person.role}</p>
-                      <ul className='flex justify-center pt-3'>
-                        <li className='bg-[#0093F6] rounded-full w-10 h-10 mx-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-125  duration-300'>
-                            <img className="w-full transition-all	" src="Assets/Icons/facebook.svg" alt="" />
-                        </li>
-                        <li className='bg-[#0093F6] rounded-full  w-10 h-10 mx-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-125  duration-300'>
-                            <img className="w-full" src="Assets/Icons/linkedin.svg" alt="" />
-                        </li>
-                        <li className='bg-[#0093F6] rounded-full  w-10 h-10 mx-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-125  duration-300'>
-                            <img className="w-full" src="Assets/Icons/twitter.svg" alt="" />
-                        </li>
-                    </ul>
-                    </div>
-                    
-                  </div>
-                </div>
-              </li>
-            ))}
-          </ul> */}
-
-
-
           <div className='flex justify-center overflow-hidden'>
             <div
               style={{
@@ -191,10 +142,8 @@ const Description = () => {
                 {people.map((person) => (
                   <div key={person.name}>
                     <div className='flex justify-center'>
-                      <div className="space-y-4 relative m-1.5 rounded-full overflow-hidden  employee ">
-                        <img className="mx-auto w-64	rounded-full " src={person.imageUrl} alt="" />
-
-
+                      <div className="space-y-4 relative m-1.5 rounded-full overflow-hidden  employee">
+                        <img className="w-64 h-64	rounded-full object-cover overflow-hidden" src={person.imageUrl} alt="" />
                         <div className="space-y-2 absolute w-full h-full flex justify-center items-center text-white socialMedia">
                           <div className="font-medium lg:text-sm">
                             <h3 className='text-base mb-1'>{person.name}</h3>
@@ -211,35 +160,19 @@ const Description = () => {
                               </li>
                             </ul>
                           </div>
-
                         </div>
                       </div>
-
                     </div>
-
                   </div>
                 ))}
-
               </Slider>
             </div>
           </div>
-
-
-
-
-
         </div>
       </div>
 
-
-
       {/* Our office  */}
-
-
       <OurOffice />
-
-
-
     </div>
   )
 }

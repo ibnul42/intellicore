@@ -5,14 +5,11 @@ import Header from '../../Components/HeaderSection'
 import './service.css'
 
 const Service = () => {
-
     const services = [
-        
-        
         {
             name: "Web Development",
             target: "web_development",
-            description: "Mistri Solutions Limited (MSL) is a software development company that excels offering innovative approaches and emerging concepts for its clients. We are confident in supplying high-quality software as the foundation for digital transformation. Our highly skilled in-house and international expert provides you with solutions that will give you an edge in the marketplace. Your project for software development to enhance business should be entrusted to Mistri Solutions Limited (MSL).",
+            description: "Intellicoreis a software development company that excels offering innovative approaches and emerging concepts for its clients. We are confident in supplying high-quality software as the foundation for digital transformation. Our highly skilled in-house and international expert provides you with solutions that will give you an edge in the marketplace. Your project for software development to enhance business should be entrusted to Intellicore",
             imageUrl:"/Assets/Service/webDev.svg",
         },
         {

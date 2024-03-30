@@ -28,7 +28,7 @@ function Header() {
             { name: "UI/UX Design & Branding", icon: "/Assets/Header/services/img5.svg", link:"/services/#ui_ux"},
             { name: "Digital Marketing", icon: "/Assets/Header/services/img6.svg", link:"/services/#digital_marketing"},
         ] },
-        { name: 'Portfolio', link: '/portfolio' },
+        // { name: 'Portfolio', link: '/portfolio' },
         { name: 'Solutions', link: '/solutions', dropdown_items: [
             { name: "Inventory Management System", icon: "/Assets/Header/solutions/img1.svg", link:"/solutions/#inventory_mng_sys"},
             { name: "CRM Solution", icon: "/Assets/Header/solutions/img2.svg", link:"/solutions/#crm_sol"},
