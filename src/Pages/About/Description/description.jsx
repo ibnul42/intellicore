@@ -83,12 +83,12 @@ const Description = () => {
       </div>
 
       {/* out mission and vision  */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-7xl px-4 mx-auto mt-20   relative">
+      <div className="max-w-7xl px-4 mx-auto mt-20   relative">
 
-        <div className="bg-gradient-to-r from-indigo-900 via-indigo-700 to-indigo-900	absolute w-full h-full top-20  md:h-[32rem] -z-10"></div>
-        <div className="flex flex-col justify-between items-center 	gap-8	">
+        {/* <div className="bg-gradient-to-r from-indigo-900 via-indigo-700 to-indigo-900	absolute w-full h-full top-20  md:h-[32rem] -z-10"></div> */}
+        <div className="grid grid-cols-1 md:grid-cols-2 bg-gradient-to-r from-indigo-900 via-indigo-700 to-indigo-900 gap-8 py-10">
 
-          <section class="w-96 px-2">
+          <section class="px-2">
             <div class="flex  h-full bg-gray-100 p-8 flex-col text-gray-900">
               <div class="flex items-center mb-3">
                 <img className='w-[50px] mr-5	' src="/Assets/About/mission.svg" alt="" />
@@ -103,7 +103,7 @@ const Description = () => {
           </section>
 
 
-          <section class="w-96 shadow-lg shadow-black-500/40 px-2 ">
+          <section class="shadow-lg shadow-black-500/40 px-2 ">
             <div class="flex  h-full bg-gray-100 p-8 flex-col">
               <div class="flex items-center mb-3">
                 <img className='w-[50px] mr-5	' src="/Assets/About/star.svg" alt="" />
@@ -116,14 +116,6 @@ const Description = () => {
               </div>
             </div>
           </section>
-
-        </div>
-        <div className="flex justify-center items-center row-start-1 md:col-start-2 mt-32 mb-20	md:mt-0">
-
-          <div className='bg-white h-[20rem] w-[20rem] relative '>
-            <img className=' w-[500px] absolute right-0 top-0 sm:top-[20px] sm:right-[20px]' src="/Assets/About/Rectangle.png" alt="" />
-          </div>
-
         </div>
       </div>
 
