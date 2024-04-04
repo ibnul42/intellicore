@@ -6,8 +6,6 @@ function classNames(...classes) {
 }
 
 export default function Toggle({toggling, setValue}) {
-  const [enabled, setEnabled] = useState(false)
-    // console.log(setValue)
   return (
     <Switch
       checked={toggling}

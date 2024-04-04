@@ -1,5 +1,6 @@
 import React from 'react'
 import { OurOffice } from '../../Components/OurOffice/OurOffice'
+import PageHeader from '../../Components/PageHeader'
 
 const contactList = [
     {
@@ -35,9 +36,10 @@ const items = [
 const Contact = () => {
     return (
         <div className="bg-[#F5F5F5]">
+            <PageHeader title={`Contact Us`} />
             <div className="relative flex justify-center items-center">
-                <img src="/Assets/Pricing/hero.png" className='w-full min-h-[100px] max-h-96 object-cover object-top' alt="hero" />
-                <h1 className="absolute text-3xl md:text-4xl text-white font-bold tracking-wider capitalize">Contact us</h1>
+                <img src="/Assets/hero.jpg" className='w-full min-h-[100px] max-h-96 object-cover object-top' alt="hero" />
+                <h1 className="absolute text-3xl md:text-4xl text-blue-950 uppercase font-bold tracking-wider">Contact us</h1>
             </div>
 
             {/* contact form  */}

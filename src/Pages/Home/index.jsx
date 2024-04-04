@@ -1,5 +1,6 @@
 import React from 'react'
 import Title from '../../Components/Title/index'
+import PageHeader from '../../Components/PageHeader';
 
 const Home = () => {
     const services = [
@@ -42,6 +43,7 @@ const Home = () => {
 
     return (
         <div className='grid grid-col-12 gap-4 mt-10'>
+            <PageHeader title={`Home`} />
 
         {/* ---------------------Cover Section-------------------------  */}
             <section className='grid grid-cols-1 md:grid-cols-2 items-center justify-center max-w-7xl mx-auto px-6 md:px-16'>

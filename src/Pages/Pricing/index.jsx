@@ -4,6 +4,7 @@ import Accordion from '../../Components/Accordion'
 import Title from '../../Components/Title/index'
 import Toggle from '../../Components/ToggleBtn'
 import Header from '../../Components/HeaderSection'
+import PageHeader from '../../Components/PageHeader'
 
 const faqs = [
     {
@@ -71,9 +72,9 @@ const seniorDev = [
     {
         title: 'starter',
         logo: '/Assets/Icons/kite.svg',
-        totalHours: '40',
+        // totalHours: '40',
         perWeek: '10',
-        perHour: '30',
+        perHour: '150',
         trial: '5',
         redirectLink: '/contact_us',
         backgroundColor: '#ffffff',
@@ -83,9 +84,9 @@ const seniorDev = [
     {
         title: 'basic',
         logo: '/Assets/Icons/paper-plane.svg',
-        totalHours: '80',
+        // totalHours: '80',
         perWeek: '20',
-        perHour: '25',
+        perHour: '120',
         trial:'10',
         redirectLink: '/contact_us',
         backgroundColor: '#0199FE',
@@ -95,9 +96,9 @@ const seniorDev = [
     {
         title: 'premium',
         logo: '/Assets/Icons/startup.svg',
-        totalHours: '160',
+        // totalHours: '160',
         perWeek: '40',
-        perHour: '20',
+        perHour: '80',
         trail: '10',
         redirectLink: '/contact_us',
         backgroundColor: '#00146B',
@@ -111,8 +112,6 @@ const Pricing = () => {
     const [enabled, setEnabled] = useState(false)
 
     useEffect(() => {
-        console.log(enabled)
-
         if (enabled === true) {
             setPriceList(juniorDev)
         } else {
@@ -124,6 +123,7 @@ const Pricing = () => {
 
     return (
         <div className="">
+            <PageHeader title={`Pricing`} />
             <Header name="Pricing" />
             {/* <div className="relative flex justify-center items-center">
                 <img src="/Assets/Pricing/hero.png" className='w-full min-h-[100px] max-h-96 object-cover object-top' alt="hero" />
@@ -147,7 +147,7 @@ const Pricing = () => {
                                 <p className='my-2 capitalize'>{item.title}</p>
                                 <img src={item.logo} className='h-20 w-20 my-3' alt={item.title} />
                                 <div className="lg:mb-10">
-                                    <p className={`border-b-2 ${index === 0 ? 'border-primary' : 'border-white'} text-center`}>{item.totalHours} Hours</p>
+                                    {/* <p className={`border-b-2 ${index === 0 ? 'border-primary' : 'border-white'} text-center`}>{item.totalHours} Hours</p> */}
                                     <p className={`text-sm  mt-1 ${index === 0 ? 'text-[rgba(0,0,0,0.41)]' : 'text-[#ffffffc2]'}`}>{item.perWeek} hours per week</p>
                                 </div>
                                 <p><span className='text-3xl font-semibold'>${item.perHour}</span> /hour</p>

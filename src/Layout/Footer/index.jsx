@@ -50,8 +50,9 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='px-4 pt-16 md:pt-20 lg:pt-4'>
-                    <div className="py-4 md:py-0">
+                    <div className="py-4 md:py-0 flex items-center gap-2">
                         <img src="/Assets/logo.jpg" className='mx-auto md:mx-0 w-12 h-auto' alt="logo" />
+                        <p className='font-bold text-2xl text-white'>Intellicore</p>
                     </div>
 
                     <div className='flex flex-col md:flex-row items-center md:items-start justify-between text-sm'>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../../Components/HeaderSection'
+import PageHeader from '../../Components/PageHeader'
 
 const Solution = () => {
 
@@ -92,6 +93,7 @@ const Solution = () => {
 
     return (
         <div>
+            <PageHeader title={`Solution`} />
                         
             <Header name="Solution" />
 
@@ -113,8 +115,6 @@ const Solution = () => {
                                     data.description.map(des => (
                                         <p className='prose prose-lg prose-indigo text-justify  text-gray-500  mb-8 leading-7'>{ des}</p>
                                     ))
-                                    
-                                    // console.log(typeof data.description)
                                 }
                                 {/* <p className='prose prose-lg prose-indigo text-justify  text-gray-500'>{data.description}</p> */}
                             
