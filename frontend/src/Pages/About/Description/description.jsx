@@ -83,7 +83,7 @@ const Description = () => {
       </div>
 
       {/* out mission and vision  */}
-      <div className="max-w-7xl px-4 mx-auto mt-20   relative">
+      <div className="max-w-7xl px-4 mx-auto mt-20 mb-10 relative">
 
         {/* <div className="bg-gradient-to-r from-indigo-900 via-indigo-700 to-indigo-900	absolute w-full h-full top-20  md:h-[32rem] -z-10"></div> */}
         <div className="grid grid-cols-1 md:grid-cols-2 bg-gradient-to-r from-indigo-900 via-indigo-700 to-indigo-900 gap-8 py-10">
@@ -120,7 +120,7 @@ const Description = () => {
       </div>
 
       {/* leadership  */}
-      <div className="mx-auto max-w-7xl py-5 px-4 text-center sm:px-6 lg:px-8 lg:py-15 mb-20">
+      {/* <div className="mx-auto max-w-7xl py-5 px-4 text-center sm:px-6 lg:px-8 lg:py-15 mb-20">
         <div className="space-y-8 sm:space-y-12 mt-16 md:mt-1">
           <Title title_text="Leadership" />
           <div className='flex justify-center overflow-hidden'>
@@ -161,7 +161,7 @@ const Description = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Our office  */}
       <OurOffice />
